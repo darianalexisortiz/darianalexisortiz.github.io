@@ -32,16 +32,34 @@
         I am currently building my portfolio to showcase my work. will be
         available soon.
       </p>
-      <q-btn to="https://github.com/darianalexisortiz"
-        label="Some of my projects" outline color="black"
+      <q-btn href="https://github.com/darianalexisortiz"
+        label="Some of my projects" target="_blank" outline color="black"
         icon="lab la-github" />
       </q-btn>
-      <q-btn to="https://www.linkedin.com/in/darian-alexis-ortiz/"
-        label="Linkedin" outline color="primary" icon="lab la-linkedin" />
+      <q-btn href="https://www.linkedin.com/in/darian-alexis-ortiz/"
+        label="Linkedin" target="_blank" outline color="primary" icon="lab
+        la-linkedin" />
       </q-btn>
     </div>
   </div>
   <!-- Add the following at the end of your body tag -->
+  <script>
+    export default {
+      setup() {
+        function linkClick(e, go) {
+          e.preventDefault() // we choose when we navigate
+          // console.log('triggering navigation in 2s')
+          setTimeout(() => {
+            // console.log('navigating as promised 2s ago')
+            go()
+          }, 2000)
+        }
+        return {
+          linkClick
+        }
+      }
+    }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js">
   </script>
   <script
