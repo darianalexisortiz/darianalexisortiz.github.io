@@ -1,14 +1,14 @@
+</html>
+
 <!DOCTYPE html>
 <html>
-<!--
-    WARNING! Make sure that you match all Quasar related
-    tags to the same version! (Below it's "@2.7.7")
-  -->
-
 <head>
+  <title>Darian's portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
-    rel="stylesheet" type="text/css">
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+    rel="stylesheet">
   <link
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     rel="stylesheet" type="text/css">
@@ -19,50 +19,32 @@
 </head>
 
 <body>
-  <!-- example of injection point where you write your app template -->
-
   <div id="q-app">
-
-
-    <div class="q-pa-md row items-start q-gutter-md">
+    <div class="q-pa-md row justify-center q-gutter-md">
       <q-card class="my-card bg-white text-black">
         <q-card-section>
           <div class="text-h6">Hi, my name is Darian. I'm a Drupal developer.
             <q-icon name="lab la-drupal" color="primary" size="32px" />
-
           </div>
-
           <p>
             I am currently building my portfolio to showcase my work. will be
             available soon.
           </p>
-          <q-btn href="https://github.com/darianalexisortiz"
-            label="Some of my projects" target="_blank" outline color="black"
-            icon="lab la-github" />
-          </q-btn>
-
+          <div class="q-pa-md q-gutter-sm">
+            <q-btn href="https://github.com/darianalexisortiz"
+              label="Some of my projects" target="_blank" outline color="black"
+              icon="lab la-github" />
+            </q-btn>
+            <q-btn href="https://www.linkedin.com/in/darian-alexis-ortiz/"
+              label="Contact me" target="_blank" outline color="light-blue-10"
+              icon="lab la-linkedin" />
+            </q-btn>
+          </div>
         </q-card-section>
       </q-card>
     </div>
   </div>
-  <!-- Add the following at the end of your body tag -->
-  <script>
-    export default {
-      setup() {
-        function linkClick(e, go) {
-          e.preventDefault() // we choose when we navigate
-          // console.log('triggering navigation in 2s')
-          setTimeout(() => {
-            // console.log('navigating as promised 2s ago')
-            go()
-          }, 2000)
-        }
-        return {
-          linkClick
-        }
-      }
-    }
-  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js">
   </script>
   <script
@@ -73,17 +55,16 @@
   </script>
 
   <script>
-    /*
-        Example kicking off the UI. Obviously, adapt this to your specific needs.
-        Assumes you have a <div id="q-app"></div> in your <body> above
-       */
     const app = Vue.createApp({
       setup() {
         return {}
       }
     })
 
-    app.use(Quasar)
+    app.use(Quasar, {
+      config: {
+      }
+    })
     Quasar.iconSet.set(Quasar.iconSet.svgLineAwesome)
     app.mount('#q-app')
   </script>
