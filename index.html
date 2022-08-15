@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Darian's portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,24 +28,197 @@
             <q-icon name="lab la-drupal" color="primary" size="32px" />
           </div>
           <p>
+
+          </p>
+          <q-banner inline-actions rounded class="bg-orange text-white">
             I am currently building my portfolio to showcase my work. will be
             available soon.
-          </p>
-          <div class="q-pa-md q-gutter-sm">
+          </q-banner>
+          <div class="q-pa-md q-gutter-sm row justify-center">
             <q-btn href="https://github.com/darianalexisortiz"
-              label="Some of my projects" target="_blank" outline color="black"
-              icon="lab la-github" />
+              label="Some of my projects" target="_blank" class="col-md-auto"
+              outline color="black" icon="lab la-github" />
             </q-btn>
             <q-btn href="https://www.linkedin.com/in/darian-alexis-ortiz/"
-              label="Contact me" target="_blank" outline color="light-blue-10"
-              icon="lab la-linkedin" />
+              label="Contact me" target="_blank" class="col-md-auto" outline
+              color="light-blue-10" icon="lab la-linkedin" />
             </q-btn>
           </div>
         </q-card-section>
       </q-card>
+
+    </div>
+    <div class="q-pa-md row justify-center q-gutter-md">
+    <div class="panels">
+      <div class="q-pa-md" class="panel">
+        <q-list bordered padding>
+          <q-item clickable v-ripple
+            href="https://github.com/darianalexisortiz/weknowstudy"
+            target="_blank">
+            <q-item-section>
+              <q-item-label overline>2022</q-item-label>
+              <q-item-label class="title"> Weknowstudy
+              </q-item-label>
+              <q-item-label caption>Site hosted in pantheon that is used to
+                carry
+                out the practices of the Drupalize.Me lessons. Preparing to take
+                the Drupal certifications.</q-item-label>
+            </q-item-section>
+
+            <q-item-section side top>
+              <q-item-label caption>Drupal 9</q-item-label>
+
+          </q-item>
+
+          </q-item-section>
+          <q-item>
+            <q-item-section column inline>
+              <q-item-label>
+                <span class="text-weight-bold">Base theme:</span> Custom theme
+              </q-item-label>
+              <q-item-label>
+                <span class="text-weight-bold">Technologies:</span> Jquery,
+                backbone, react
+              </q-item-label>
+              <q-item-label>
+                <span class="text-weight-bold">Design to theme:</span>
+                Added institutional colors
+              </q-item-label>
+              <q-item-label>
+                <span class="text-weight-bold">Work being done:</span>
+                Learning and practice
+              </q-item-label>
+            </q-item-section>
+          </q-item>
+        </q-list>
+      </div>
+      <div class="q-pa-md" class="panel">
+        <q-list bordered padding>
+          <q-item clickable v-ripple
+            href="https://github.com/darianalexisortiz/commerce-payment-visanet-peru"
+            target="_blank">
+            <q-item-section>
+              <q-item-label overline>2021</q-item-label>
+              <q-item-label class="title"> Commerce Payment VisaNet Peru
+              </q-item-label>
+              <q-item-label caption>A custom payment method was created that
+                works
+                in Drupal Commerce for a company that required to use a
+                Visanet
+                Peru payment method.</q-item-label>
+            </q-item-section>
+
+            <q-item-section side top>
+              <q-item-label caption>Drupal 7</q-item-label>
+
+          </q-item>
+
+          </q-item-section>
+        </q-list>
+      </div>
+      <div class="q-pa-md" class="panel">
+        <q-list bordered padding>
+          <q-item clickable v-ripple
+            href="https://github.com/darianalexisortiz/commerce-paintingsgallery"
+            target="_blank">
+            <q-item-section>
+              <q-item-label overline>2015 - 2021</q-item-label>
+              <q-item-label class="title"> E-Commerce Paintings Gallery
+              </q-item-label>
+              <q-item-label caption>Electronic trade that allows you to find
+                paintings with different frames developed by the factory divided
+                into different categories, sizes and styles. The site had more
+                than 8000 different pictures. This project started as a Drupal 7
+                maintenance, then the design was improved and faceted searches
+                were added in 2019 the site was migrated to Drupal 8 and in 2021
+                it was migrated to Drupal 9.</q-item-label>
+            </q-item-section>
+
+            <q-item-section side top>
+              <q-item-label caption>Drupal 9</q-item-label>
+
+          </q-item>
+
+          </q-item-section>
+          <q-item>
+            <q-item-section column inline>
+              <q-item-label>
+                <span class="text-weight-bold">Base theme:</span> Belgrade
+              </q-item-label>
+              <q-item-label>
+                <span class="text-weight-bold">Technologies:</span> Jquery
+              </q-item-label>
+              <q-item-label>
+                <span class="text-weight-bold">Design to theme:</span>
+                Added institutional colors
+              </q-item-label>
+              <q-item-label>
+                <span class="text-weight-bold">Work done:</span>
+                Maintenance and continuous improvement for 6 years
+              </q-item-label>
+              <q-item-label>
+                <span class="text-weight-bold">Other description:</span>
+                This project required hosting on a shared server with Cpanel
+                which did not allow the execution of composer by server
+                directives to take care of memory performance, therefore it was
+                decided to version both the vendor directory as well as the
+                contrib directories and the drupal core to be able to deploy to
+                the production server efficiently.
+              </q-item-label>
+            </q-item-section>
+          </q-item>
+        </q-list>
+      </div>
+      <div class="q-pa-md" class="panel">
+        <q-list bordered padding>
+          <q-item clickable v-ripple
+            href="https://github.com/darianalexisortiz/werfen" target="_blank">
+            <q-item-section>
+              <q-item-label overline>2020</q-item-label>
+              <q-item-label class="title"> Swiper Slider Site
+              </q-item-label>
+              <q-item-label caption>Institutional site where it invites you to
+                navigate through its content with sliding screens without
+                reloading the page and obtaining the content dynamically.
+                Custom theme was created for Drupal 8 using Swiper Slider and
+                svg
+                images for navigation and animation.
+              </q-item-label>
+            </q-item-section>
+
+            <q-item-section side top>
+              <q-item-label caption>Drupal 8</q-item-label>
+
+          </q-item>
+
+          </q-item-section>
+          <q-item>
+            <q-item-section column inline>
+              <q-item-label>
+                <span class="text-weight-bold">Base theme:</span> Bootstrap 4
+              </q-item-label>
+              <q-item-label>
+                <span class="text-weight-bold">Technologies:</span> Swiper
+                Slider
+                and Jquery
+              </q-item-label>
+              <q-item-label>
+                <span class="text-weight-bold">Design to theme:</span>
+                Implemented from an svg
+              </q-item-label>
+              <q-item-label>
+                <span class="text-weight-bold">Work done:</span>
+                Planning, selection of appropriate modules, content structure,
+                content loading and a theme was created with animated sections
+                with swift and svg images to achieve specific animations.
+              </q-item-label>
+            </q-item-section>
+          </q-item>
+        </q-list>
+      </div>
     </div>
   </div>
-
+</div>
   <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js">
   </script>
   <script
@@ -62,12 +236,23 @@
     })
 
     app.use(Quasar, {
-      config: {
-      }
+      config: {}
     })
     Quasar.iconSet.set(Quasar.iconSet.svgLineAwesome)
     app.mount('#q-app')
   </script>
+  <style>
+    .panels{
+      max-width: 800px;
+    }
+    .text-caption {
+      font-size: 1rem;
+    }
+
+    .title {
+      font-size: 22px;
+    }
+  </style>
 </body>
 
 </html>
