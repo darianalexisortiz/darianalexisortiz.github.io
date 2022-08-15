@@ -22,28 +22,37 @@
 <body>
   <div id="q-app">
     <div class="q-pa-md row justify-center q-gutter-md">
-      <q-card class="my-card bg-white text-black">
+      <q-card class="my-card bg-white text-black panels-intro">
         <q-card-section>
           <div class="text-h6">Hi, my name is Darian. I'm a Drupal developer.
             <q-icon name="lab la-drupal" color="primary" size="32px" />
           </div>
-          <p>
-
-          </p>
           <q-banner inline-actions rounded class="bg-orange text-white">
             I am currently building my portfolio to showcase my work. will be
             available soon.
           </q-banner>
           <div class="q-pa-md q-gutter-sm row justify-center">
-            <q-btn href="https://github.com/darianalexisortiz"
-              label="Some of my projects" target="_blank" class="col-md-auto"
-              outline color="black" icon="lab la-github" />
-            </q-btn>
             <q-btn href="https://www.linkedin.com/in/darian-alexis-ortiz/"
               label="Contact me" target="_blank" class="col-md-auto" outline
               color="light-blue-10" icon="lab la-linkedin" />
             </q-btn>
           </div>
+                 <p>
+                  A large part of my work has been under different agencies,
+                   for which many of
+                   the
+                   projects carried out cannot be published by contract, but I
+                   am compiling the
+                   different abandoned or updated projects that have been part
+                   of my history.
+                   Gradually more projects will be added to the list.</p>
+
+           <div class="q-pa-md q-gutter-sm row justify-center">
+             <q-btn href="https://github.com/darianalexisortiz"
+               label="Some of my projects" target="_blank" class="col-md-auto"
+               outline color="black" icon="lab la-github" />
+             </q-btn>
+           </div>
         </q-card-section>
       </q-card>
 
@@ -67,9 +76,7 @@
 
             <q-item-section side top>
               <q-item-label caption>Drupal 9</q-item-label>
-
           </q-item>
-
           </q-item-section>
           <q-item>
             <q-item-section column inline>
@@ -245,6 +252,9 @@
     .panels{
       max-width: 800px;
     }
+    .panels-intro{
+        max-width: 600px;
+        }
     .text-caption {
       font-size: 1rem;
     }
